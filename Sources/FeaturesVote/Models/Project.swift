@@ -56,6 +56,8 @@ public struct Customization: Codable {
     public let isInProgressOnTop: Bool?
     public let viewAllRequestsLink: String?
     public let postLabel: String?
+    public let roadmapLabel: String?
+    public let changelogLabel: String?
     public let hideViewAllRedirect: Bool?
     public let disabledAnonMessage: String?
     public let whitelistUrls: String?
@@ -74,6 +76,8 @@ public struct Customization: Codable {
         case isInProgressOnTop
         case viewAllRequestsLink
         case postLabel
+        case roadmapLabel
+        case changelogLabel
         case hideViewAllRedirect
         case disabledAnonMessage
         case whitelistUrls
@@ -93,6 +97,8 @@ public struct Customization: Codable {
         isInProgressOnTop: Bool? = nil,
         viewAllRequestsLink: String? = nil,
         postLabel: String? = nil,
+        roadmapLabel: String? = nil,
+        changelogLabel: String? = nil,
         hideViewAllRedirect: Bool? = nil,
         disabledAnonMessage: String? = nil,
         whitelistUrls: String? = nil,
@@ -110,6 +116,8 @@ public struct Customization: Codable {
         self.isInProgressOnTop = isInProgressOnTop
         self.viewAllRequestsLink = viewAllRequestsLink
         self.postLabel = postLabel
+        self.roadmapLabel = roadmapLabel
+        self.changelogLabel = changelogLabel
         self.hideViewAllRedirect = hideViewAllRedirect
         self.disabledAnonMessage = disabledAnonMessage
         self.whitelistUrls = whitelistUrls
